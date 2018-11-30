@@ -17,7 +17,7 @@ function concertThis (textTosearch) {
             
     
         function(response){
-            // for (i=0; i>response.data.length; i++) {
+            
             venue = response.data.venue.name;
              locationCity = response.data.venue.city;
              locationRegion = response.data.venue.region;
@@ -36,8 +36,13 @@ function spotifyThisSong(textToSearch) {
   .search({ type: 'track', query: textToSearch })
   .then(function(response) {
     console.log(response);
-  })
+  //the rest of this function should include responses from the spotify API (i.e. artist = response.data.artist) 
+  //and then console logging the response but I cannot access the path
+
+})
 }
+
+
 
 function movieThis (textToSearch) {
 
